@@ -19,8 +19,8 @@ def comp(base_glyf, target_glyf):
         return mark
 
 
-myfont1 = os.path.join(os.path.dirname(__file__), 'luntan_font1.ttf')
-myfont2 = os.path.join(os.path.dirname(__file__), 'luntan_font2.ttf')
+myfont1 = os.path.join('/home/home/luntan/luntan', 'luntan_font1.ttf')
+myfont2 = os.path.join('/home/home/luntan/luntan', 'luntan_font2.ttf')
 
 def get_map(target_font_file):
     font1 = TTFont(myfont1)
