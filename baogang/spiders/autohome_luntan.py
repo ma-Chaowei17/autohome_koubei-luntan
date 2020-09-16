@@ -11,7 +11,9 @@ import requests
 import scrapy
 from fontTools.ttLib import TTFont
 from redis import Redis
-from scrapy.conf import settings
+# from scrapy.conf import settings
+from scrapy.utils.project import get_project_settings 
+settings = get_project_settings()
 
 from ..proxy import get_ug
 from ..items import LuntanItem

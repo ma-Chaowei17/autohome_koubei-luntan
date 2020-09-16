@@ -10,7 +10,9 @@ from ..koubei_font import get_map
 from ..proxy import get_ug
 from ..items import Autohome_koubei_all
 import time
-from scrapy.conf import settings
+# from scrapy.conf import settings
+from scrapy.utils.project import get_project_settings 
+settings = get_project_settings()
 import logging
 import re, os.path
 from scrapy_splash import SplashRequest
